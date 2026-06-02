@@ -3,139 +3,130 @@ import { useState } from "react";
 
 export default function DemoForm() {
   const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({
-    name: "", email: "", institution: "", role: "", size: "", message: "",
-  });
+  const [form, setForm] = useState({ name: "", email: "", institution: "", role: "", size: "", message: "" });
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setSubmitted(true);
-  }
+  function handleSubmit(e: React.FormEvent) { e.preventDefault(); setSubmitted(true); }
 
   return (
-    <section id="demo" className="py-20 bg-gradient-to-br from-[#1a3a6b] to-[#0f2a52] text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div>
-            <span className="text-[#90e0ef] text-sm font-semibold uppercase tracking-widest">Get Started</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold mt-2 leading-tight">
-              Request a free demo
+    <section id="demo" className="py-24 bg-ink-900 relative overflow-hidden">
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-indigo/15 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-brand-cyan/10 rounded-full blur-[80px] pointer-events-none" />
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-14 items-start">
+
+          {/* Left copy */}
+          <div className="pt-4">
+            <span className="inline-block text-xs font-bold text-brand-cyan uppercase tracking-[0.2em] mb-4">Get Started</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-5 leading-tight">
+              Request a free demo.<br/>
+              <span className="gradient-text">No sales pressure.</span>
             </h2>
-            <p className="text-white/70 mt-4 leading-relaxed">
-              We'll walk your team through the platform, show you the AIBguard audit in action, and answer any compliance questions you have. Live session, no sales pressure.
+            <p className="text-slate-400 leading-relaxed mb-8">
+              We'll walk your team through AIBgin, show the AIBguard audit live, and answer every compliance question you have.
             </p>
-            <ul className="mt-8 space-y-3 text-sm text-white/80">
+
+            <ul className="space-y-4 mb-10">
               {[
-                "30-minute live walkthrough with your team",
-                "Full compliance documentation pack",
-                "Trial access for up to 2 classrooms — free for 30 days",
-                "Dedicated onboarding for District plans",
+                { icon: "🎯", text: "30-min live walkthrough with your team" },
+                { icon: "📋", text: "Full compliance documentation pack" },
+                { icon: "🆓", text: "Free 30-day trial — up to 2 classrooms" },
+                { icon: "🤝", text: "Dedicated onboarding for District plans" },
               ].map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-[#00b4d8] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {item}
+                <li key={item.text} className="flex items-start gap-3 text-sm text-slate-300">
+                  <span className="text-lg leading-none mt-0.5">{item.icon}</span>
+                  {item.text}
                 </li>
               ))}
             </ul>
-            <div className="mt-10 text-sm text-white/50">
-              Or email us directly: <a href="mailto:schools@aibgin.info" className="text-[#90e0ef] hover:underline">schools@aibgin.info</a>
+
+            <div className="glass rounded-2xl p-5">
+              <div className="text-xs text-slate-500 mb-3 uppercase tracking-wider font-semibold">Or reach us directly</div>
+              <a href="mailto:schools@aibgin.info"
+                className="flex items-center gap-2 text-brand-cyan hover:text-white transition-colors text-sm font-medium">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="1.25"/>
+                  <path d="M1 5l7 5 7-5" stroke="currentColor" strokeWidth="1.25" strokeLinejoin="round"/>
+                </svg>
+                schools@aibgin.info
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 text-slate-800">
+          {/* Form */}
+          <div className="glass-light rounded-3xl p-8">
             {submitted ? (
-              <div className="text-center py-8">
-                <div className="text-5xl mb-4">✅</div>
-                <h3 className="text-xl font-bold text-[#1a3a6b] mb-2">Request received!</h3>
-                <p className="text-slate-500 text-sm">We'll be in touch within one business day to schedule your demo.</p>
+              <div className="text-center py-10">
+                <div className="w-16 h-16 bg-brand-emerald/20 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                  <svg className="w-8 h-8 text-brand-emerald" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Request received!</h3>
+                <p className="text-slate-400 text-sm">We'll be in touch within one business day to schedule your demo.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                <h3 className="text-lg font-bold text-white mb-5">Book your demo</h3>
+
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Full name *</label>
-                    <input
-                      required name="name" value={form.name} onChange={handleChange}
-                      className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#00b4d8]"
-                      placeholder="Jane Smith"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Work email *</label>
-                    <input
-                      required type="email" name="email" value={form.email} onChange={handleChange}
-                      className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#00b4d8]"
-                      placeholder="jane@school.edu"
-                    />
-                  </div>
+                  {[
+                    { name: "name",  label: "Full name",   placeholder: "Jane Smith",        type: "text" },
+                    { name: "email", label: "Work email",  placeholder: "jane@school.edu",   type: "email" },
+                  ].map((f) => (
+                    <div key={f.name}>
+                      <label className="block text-xs font-semibold text-slate-400 mb-1.5">{f.label} *</label>
+                      <input required type={f.type} name={f.name} value={(form as any)[f.name]} onChange={handleChange}
+                        placeholder={f.placeholder}
+                        className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-3.5 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-indigo/60 focus:bg-white/[0.08] transition-all"/>
+                    </div>
+                  ))}
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-600 mb-1">Institution name *</label>
-                  <input
-                    required name="institution" value={form.institution} onChange={handleChange}
-                    className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#00b4d8]"
-                    placeholder="Greenfield Primary School"
-                  />
+                  <label className="block text-xs font-semibold text-slate-400 mb-1.5">Institution name *</label>
+                  <input required name="institution" value={form.institution} onChange={handleChange}
+                    placeholder="Greenfield Academy"
+                    className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-3.5 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-indigo/60 transition-all"/>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Your role</label>
-                    <select
-                      name="role" value={form.role} onChange={handleChange}
-                      className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#00b4d8] bg-white"
-                    >
-                      <option value="">Select role</option>
-                      <option>Headteacher / Principal</option>
-                      <option>Deputy Head</option>
-                      <option>IT Manager</option>
-                      <option>Safeguarding Lead</option>
-                      <option>MAT / District Leadership</option>
-                      <option>Teacher</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Institution size</label>
-                    <select
-                      name="size" value={form.size} onChange={handleChange}
-                      className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#00b4d8] bg-white"
-                    >
-                      <option value="">Select size</option>
-                      <option>1 school (&lt;300 students)</option>
-                      <option>1 school (300–1000 students)</option>
-                      <option>1 school (1000+ students)</option>
-                      <option>2–5 schools (MAT / group)</option>
-                      <option>6+ schools (MAT / district)</option>
-                    </select>
-                  </div>
+                  {[
+                    {
+                      name: "role", label: "Your role",
+                      options: ["Headteacher / Principal", "Deputy Head", "IT Manager", "Safeguarding Lead", "MAT / District Leadership", "Teacher"],
+                    },
+                    {
+                      name: "size", label: "Institution size",
+                      options: ["1 school (<300 students)", "1 school (300–1000)", "1 school (1000+)", "2–5 schools (MAT)", "6+ schools (District)"],
+                    },
+                  ].map((f) => (
+                    <div key={f.name}>
+                      <label className="block text-xs font-semibold text-slate-400 mb-1.5">{f.label}</label>
+                      <select name={f.name} value={(form as any)[f.name]} onChange={handleChange}
+                        className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-3.5 py-3 text-sm text-slate-300 focus:outline-none focus:border-brand-indigo/60 transition-all appearance-none">
+                        <option value="" className="bg-ink-900">Select…</option>
+                        {f.options.map((o) => <option key={o} value={o} className="bg-ink-900">{o}</option>)}
+                      </select>
+                    </div>
+                  ))}
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-600 mb-1">Anything specific you'd like to cover?</label>
-                  <textarea
-                    name="message" value={form.message} onChange={handleChange} rows={3}
-                    className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#00b4d8] resize-none"
-                    placeholder="e.g. GDPR compliance questions, Ofsted readiness, safeguarding integration..."
-                  />
+                  <label className="block text-xs font-semibold text-slate-400 mb-1.5">Anything specific to cover?</label>
+                  <textarea name="message" value={form.message} onChange={handleChange} rows={3}
+                    placeholder="e.g. GDPR compliance, Ofsted readiness, safeguarding integration…"
+                    className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-3.5 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-indigo/60 transition-all resize-none"/>
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-[#1a3a6b] text-white py-3 rounded-xl font-bold text-sm hover:bg-[#00b4d8] transition-colors"
-                >
+                <button type="submit"
+                  className="w-full bg-gradient-to-r from-brand-indigo to-brand-cyan text-white py-3.5 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow-glow-indigo">
                   Request Free Demo →
                 </button>
-                <p className="text-xs text-slate-400 text-center">
-                  No spam. No sales calls unless requested. We'll reply within 1 business day.
-                </p>
+                <p className="text-[11px] text-slate-600 text-center">No spam. Reply within 1 business day.</p>
               </form>
             )}
           </div>

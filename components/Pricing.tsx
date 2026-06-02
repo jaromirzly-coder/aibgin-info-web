@@ -2,48 +2,56 @@ const plans = [
   {
     name: "Starter",
     price: "$49",
-    period: "/month",
-    desc: "Perfect for a single school getting started with AI-assisted learning.",
+    period: "/mo",
+    annualNote: "$39/mo billed annually",
+    desc: "One school getting started with AI-assisted learning.",
+    tag: null,
+    classrooms: "Up to 5 classrooms",
+    queries: "50,000 queries/month",
     features: [
-      "Up to 5 classrooms",
-      "50,000 queries/month",
       "AIBguard safety audit",
       "Age-appropriate profiles",
-      "QR code access",
+      "QR code access — no student accounts",
       "1-year audit log",
       "Email support",
+      "EU data residency",
     ],
     cta: "Start Free Trial",
+    ctaStyle: "glass border border-white/[0.12] text-white hover:bg-white/[0.08]",
     highlight: false,
-    badge: null,
   },
   {
     name: "Growth",
     price: "$149",
-    period: "/month",
-    desc: "For schools scaling AI across departments with advanced safeguarding.",
+    period: "/mo",
+    annualNote: "$119/mo billed annually",
+    desc: "Schools scaling AI across departments with advanced safeguarding.",
+    tag: "Most Popular",
+    classrooms: "Up to 20 classrooms",
+    queries: "200,000 queries/month",
     features: [
-      "Up to 20 classrooms",
-      "200,000 queries/month",
+      "Everything in Starter",
       "AIBguard + crisis detection",
-      "Custom content guardrails",
       "Safeguarding lead escalation",
+      "Custom content guardrails",
       "5-year audit log",
-      "Priority support + onboarding",
+      "Priority support + onboarding call",
     ],
     cta: "Request Demo",
+    ctaStyle: "bg-gradient-to-r from-brand-indigo to-brand-cyan text-white hover:opacity-90 shadow-glow-indigo",
     highlight: true,
-    badge: "Most Popular",
   },
   {
     name: "District",
     price: "$499",
-    period: "/month",
-    desc: "For MATs, school districts, and multi-site organisations.",
+    period: "/mo",
+    annualNote: "$399/mo billed annually",
+    desc: "MATs, school districts, and multi-site organisations.",
+    tag: "Enterprise",
+    classrooms: "Unlimited classrooms",
+    queries: "Unlimited queries",
     features: [
-      "Unlimited classrooms",
-      "Unlimited queries",
-      "All Growth features",
+      "Everything in Growth",
       "White-label branding",
       "SSO / LDAP integration",
       "Dedicated account manager",
@@ -51,78 +59,91 @@ const plans = [
       "Custom data retention policy",
     ],
     cta: "Contact Sales",
+    ctaStyle: "glass border border-brand-violet/40 text-brand-violet hover:bg-brand-violet/10",
     highlight: false,
-    badge: "Enterprise",
   },
 ];
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-14">
-          <span className="text-[#00b4d8] text-sm font-semibold uppercase tracking-widest">Pricing</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a3a6b] mt-2">
-            Transparent pricing. No surprises.
+    <section id="pricing" className="py-24 bg-ink-950 relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-indigo/10 rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-16">
+          <span className="inline-block text-xs font-bold text-brand-indigo uppercase tracking-[0.2em] mb-4">Pricing</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+            Transparent pricing.<br/>
+            <span className="gradient-text">No surprises.</span>
           </h2>
-          <p className="text-slate-500 mt-3 max-w-xl mx-auto">
-            All plans include AIBguard safety, EU data residency, and GDPR compliance. Billed monthly or annually (save 20%).
+          <p className="text-slate-400 max-w-lg mx-auto">
+            All plans include AIBguard safety, EU data residency, and GDPR compliance.
           </p>
+
+          {/* Annual toggle hint */}
+          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mt-6 text-sm">
+            <span className="w-2 h-2 bg-brand-emerald rounded-full"></span>
+            <span className="text-slate-300">Save <strong className="text-brand-emerald">20%</strong> with annual billing</span>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 items-stretch">
+        <div className="grid md:grid-cols-3 gap-5 items-stretch">
           {plans.map((p) => (
-            <div
-              key={p.name}
-              className={`rounded-2xl p-8 flex flex-col border ${
-                p.highlight
-                  ? "border-[#00b4d8] shadow-xl ring-2 ring-[#00b4d8]/20 bg-white"
-                  : "border-slate-100 bg-slate-50"
-              }`}
-            >
-              <div className="flex items-center justify-between mb-1">
-                <h3 className="text-lg font-extrabold text-[#1a3a6b]">{p.name}</h3>
-                {p.badge && (
-                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
-                    p.highlight ? "bg-[#00b4d8] text-white" : "bg-slate-200 text-slate-600"
-                  }`}>
-                    {p.badge}
-                  </span>
-                )}
-              </div>
-              <div className="flex items-end gap-1 mt-3 mb-2">
-                <span className="text-4xl font-extrabold text-[#1a3a6b]">{p.price}</span>
-                <span className="text-slate-400 text-sm mb-1">{p.period}</span>
-              </div>
-              <p className="text-slate-500 text-sm mb-6">{p.desc}</p>
+            <div key={p.name} className={`relative flex flex-col rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 ${
+              p.highlight
+                ? "bg-gradient-to-b from-brand-indigo/20 to-brand-cyan/5 border border-brand-indigo/50 shadow-glow-indigo"
+                : "glass"
+            }`}>
+              {p.tag && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className={`text-xs font-bold px-4 py-1.5 rounded-full ${
+                    p.highlight ? "bg-gradient-to-r from-brand-indigo to-brand-cyan text-white" : "bg-brand-violet/20 border border-brand-violet/40 text-brand-violet"
+                  }`}>{p.tag}</span>
+                </div>
+              )}
 
-              <ul className="space-y-2.5 flex-1 mb-8">
+              <div className="mb-5 pt-2">
+                <h3 className="text-base font-bold text-white mb-1">{p.name}</h3>
+                <p className="text-xs text-slate-500">{p.desc}</p>
+              </div>
+
+              <div className="mb-1">
+                <div className="flex items-end gap-1">
+                  <span className="text-4xl font-black text-white">{p.price}</span>
+                  <span className="text-slate-500 text-sm mb-1.5">{p.period}</span>
+                </div>
+                <div className="text-[11px] text-slate-500 mt-0.5">{p.annualNote}</div>
+              </div>
+
+              <div className="glass rounded-xl px-3 py-2 mb-5 mt-3 text-xs text-slate-400 flex items-center gap-2">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M6 1l1.5 3.5H11l-3 2.2 1.2 3.6L6 8.4 2.8 10.3 4 6.7 1 4.5h3.5L6 1z" fill="#6366f1"/>
+                </svg>
+                {p.classrooms} · {p.queries}
+              </div>
+
+              <ul className="space-y-2.5 flex-1 mb-7">
                 {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-slate-700">
-                    <svg className="w-4 h-4 text-[#00b4d8] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-slate-300">
+                    <svg className="w-4 h-4 text-brand-emerald shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 16 16">
+                      <path fillRule="evenodd" d="M13.707 4.293a1 1 0 010 1.414l-6.5 6.5a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L6.5 10.086l5.793-5.793a1 1 0 011.414 0z" clipRule="evenodd"/>
                     </svg>
                     {f}
                   </li>
                 ))}
               </ul>
 
-              <a
-                href="#demo"
-                className={`block text-center py-3 rounded-xl font-bold text-sm transition-colors ${
-                  p.highlight
-                    ? "bg-[#1a3a6b] text-white hover:bg-[#00b4d8]"
-                    : "bg-white border border-slate-200 text-[#1a3a6b] hover:border-[#00b4d8] hover:text-[#00b4d8]"
-                }`}
-              >
-                {p.cta}
+              <a href="#demo"
+                className={`block text-center py-3.5 rounded-xl font-bold text-sm transition-all ${p.ctaStyle}`}>
+                {p.cta} →
               </a>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-sm text-slate-400 mt-8">
-          All prices in USD. VAT may apply. Annual billing saves 20%. <a href="#demo" className="text-[#00b4d8] hover:underline">Need a custom quote?</a>
+        <p className="text-center text-xs text-slate-600 mt-8">
+          All prices in USD. VAT may apply.{" "}
+          <a href="#demo" className="text-brand-indigo hover:underline">Need a custom quote for your district?</a>
         </p>
       </div>
     </section>
