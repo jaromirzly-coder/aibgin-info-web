@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060912"/>
+      <stop offset="100%" stop-color="#0a0f1e"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title-grad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Glow orbs -->
+  <circle cx="360" cy="189" r="300" fill="url(#glow1)"/>
+  <circle cx="960" cy="441" r="252" fill="url(#glow2)"/>
+  <!-- Grid lines -->
+  <g opacity="0.04" stroke="white" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <!-- Logo icon -->
+  <path d="M80 315L120 292V248L80 225L40 248V292L80 315Z" fill="url(#title-grad)" opacity="0.9"/>
+  <circle cx="80" cy="269" r="18" fill="white" opacity="0.9"/>
+  <circle cx="80" cy="269" r="8" fill="#6366f1"/>
+  <!-- Brand name -->
+  <text x="148" y="258" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="72" font-weight="800" fill="white" letter-spacing="-2">AIB</text>
+  <text x="290" y="258" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="72" font-weight="800" fill="url(#title-grad)" letter-spacing="-2">gin</text>
+  <!-- Tagline -->
+  <text x="80" y="320" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="30" font-weight="500" fill="#94a3b8">Safe AI Platform for Schools · US &amp; UK · EU AI Act Compliant</text>
+  <!-- Bottom badges -->
+  <rect x="80" y="400" width="200" height="48" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.4)" stroke-width="1.5"/>
+  <text x="180" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#a5b4fc" text-anchor="middle">FERPA + COPPA</text>
+  <rect x="300" y="400" width="180" height="48" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.4)" stroke-width="1.5"/>
+  <text x="390" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#67e8f9" text-anchor="middle">KCSiE · UK</text>
+  <rect x="500" y="400" width="160" height="48" rx="12" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.4)" stroke-width="1.5"/>
+  <text x="580" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#6ee7b7" text-anchor="middle">EU AI Act</text>
+  <rect x="680" y="400" width="200" height="48" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.4)" stroke-width="1.5"/>
+  <text x="780" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#c4b5fd" text-anchor="middle">Zero Child Accounts</text>
+  <!-- Domain -->
+  <text x="1120" y="590" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="rgba(255,255,255,0.3)" text-anchor="end">aibgin.info</text>
+</svg>

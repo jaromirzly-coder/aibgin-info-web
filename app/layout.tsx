@@ -9,29 +9,33 @@ export const metadata: Metadata = {
     template: "%s | AIBgin",
   },
   description:
-    "AIBgin is the EU AI Act-compliant AI chatbot platform for schools, MATs, and districts. No child accounts. QR code access. Real-time AIBguard safety audit on every response.",
+    "AIBgin is the FERPA, COPPA & KCSiE-compliant AI chatbot platform for K-12 schools, MATs, and districts. No student accounts. QR code access. Real-time AIBguard safety audit on every response.",
   keywords: [
-    "school AI platform", "AI for education", "safe AI chatbot",
-    "EU AI Act school", "MAT AI", "district AI platform", "AIBgin",
-    "EdTech AI safety", "safeguarding AI", "child safe AI", "QR code AI school",
-    "AI for teachers", "school chatbot UK", "school chatbot US",
+    "AI for schools", "safe AI chatbot K-12", "classroom AI assistant",
+    "school district AI", "COPPA compliant AI", "FERPA compliant AI",
+    "KCSiE safeguarding AI", "MAT AI platform", "EdTech AI safety",
+    "child safe AI chatbot", "QR code AI school", "school AI chatbot UK",
+    "school AI chatbot US", "AIBgin", "AI safeguarding tool",
   ],
   authors: [{ name: "AIBgin", url: "https://aibgin.info" }],
   creator: "AIBlab — SAY TO PAY s.r.o.",
-  alternates: {
-    canonical: "https://aibgin.info",
+  alternates: { canonical: "https://aibgin.info" },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   openGraph: {
     title: "AIBgin — Safe AI for Schools | US & UK",
     description:
-      "Zero child registration. QR code access. Real-time safety audit on every AI response. Built for schools, MATs and districts.",
+      "Zero student registration. QR code access. Real-time safety audit on every AI response. FERPA, COPPA & KCSiE compliant.",
     url: "https://aibgin.info",
     siteName: "AIBgin",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "https://aibgin.info/og-image.png",
+        url: "https://aibgin.info/og-image.svg",
         width: 1200,
         height: 630,
         alt: "AIBgin — Safe AI Platform for Schools",
@@ -42,8 +46,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AIBgin — Safe AI for Schools | US & UK",
     description:
-      "Zero child registration. QR code access. Real-time safety audit on every response.",
-    images: ["https://aibgin.info/og-image.png"],
+      "Zero student registration. QR code access. Real-time safety audit on every response.",
+    images: ["https://aibgin.info/og-image.svg"],
   },
   robots: {
     index: true,
@@ -53,6 +57,48 @@ export const metadata: Metadata = {
 };
 
 const GA_ID = "G-FH5978GQ0R";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aibgin.info/#organization",
+      name: "AIBgin",
+      url: "https://aibgin.info",
+      logo: "https://aibgin.info/logo.svg",
+      description: "Safe AI chatbot platform for schools, MATs and districts.",
+      parentOrganization: {
+        "@type": "Organization",
+        name: "SAY TO PAY s.r.o.",
+        url: "https://aiblab.info",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "schools@aibgin.info",
+        contactType: "sales",
+      },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://aibgin.info/#software",
+      name: "AIBgin",
+      applicationCategory: "EducationApplication",
+      operatingSystem: "Web",
+      url: "https://aibgin.info",
+      offers: {
+        "@type": "Offer",
+        price: "49",
+        priceCurrency: "USD",
+      },
+      description:
+        "FERPA, COPPA and KCSiE compliant AI chatbot platform for K-12 schools with real-time safety audit.",
+      publisher: {
+        "@id": "https://aibgin.info/#organization",
+      },
+    },
+  ],
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -70,6 +116,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${GA_ID}', { page_path: window.location.pathname });
           `}
         </Script>
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>{children}</body>
     </html>
