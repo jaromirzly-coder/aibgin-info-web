@@ -88,7 +88,8 @@ export default function Footer() {
         <div className="border-t border-white/[0.06] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-600">© 2026 AIBgin · AIBlab · SAY TO PAY s.r.o. All rights reserved.</p>
           <div className="flex items-center gap-5 text-xs text-slate-600">
-            <a href="mailto:schools@aibgin.info" className="hover:text-brand-cyan transition-colors">schools@aibgin.info</a>
+            <a href="mailto:info@aibgin.info" className="hover:text-brand-cyan transition-colors">info@aibgin.info</a>
+            <a href="mailto:support@aibgin.info" className="hover:text-brand-cyan transition-colors">support@aibgin.info</a>
             <a href="https://app.aibgin.cz" target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">app.aibgin.cz</a>
           </div>
         </div>
