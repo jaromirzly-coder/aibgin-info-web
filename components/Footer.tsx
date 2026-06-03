@@ -17,7 +17,7 @@ const legalLinks = [
   { label: "Privacy Policy",      href: "/privacy-policy" },
   { label: "Terms of Service",    href: "/terms" },
   { label: "GDPR Statement",      href: "/gdpr" },
-  { label: "EU AI Act Compliance", href: "#" },
+  { label: "EU AI Act Compliance", href: "/eu-ai-act" },
 ];
 
 export default function Footer() {
