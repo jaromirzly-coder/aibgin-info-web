@@ -28,10 +28,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-[-0.02em] mb-6 animate-fade-up animate-delay-100">
-              <span className="text-white">Safe AI Chatbot Platform</span><br/>
-              <span className="gradient-text">for K-12 Schools</span><br/>
-              <span className="text-white">&amp;</span>{" "}
-              <span className="gradient-text">Districts</span>
+              <span className="text-white">Safe AI Chatbot Platform for K-12 Schools &amp; Districts</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-6 animate-fade-up animate-delay-200 max-w-xl">
