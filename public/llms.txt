@@ -1,0 +1,7 @@
+# AIBgin — Safe AI Chatbot Platform for K-12 Schools
+> FERPA, COPPA and KCSiE-compliant AI platform. Zero student accounts. QR code access. Real-time AIBguard safety audit.
+
+## Key facts
+- Pricing: Starter $49/mo, Growth $149/mo, District $499/mo
+- Compliance: FERPA, COPPA, KCSiE, EU AI Act, GDPR, ISO 42001
+- Contact: schools@aibgin.info

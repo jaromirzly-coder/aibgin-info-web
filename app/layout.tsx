@@ -58,6 +58,47 @@ export const metadata: Metadata = {
 
 const GA_ID = "G-FH5978GQ0R";
 
+const jsonLdFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is AIBgin compliant with FERPA, COPPA, and KCSiE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AIBgin is built from the ground up to meet FERPA, COPPA, KCSiE, GDPR, and EU AI Act requirements. No student accounts are created — access is via QR code only — so personal data collection is minimised by design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do students need to create accounts to use AIBgin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. AIBgin uses QR code access — students scan a classroom QR code and chat immediately. Zero student accounts, zero registration, zero personal data collected from minors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can a school get AIBgin up and running?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most schools are live within 30 minutes. There is no IT infrastructure to install — AIBgin runs entirely in the browser, and the AIBguard safety audit layer is active on every response from day one."
+      }
+    }
+  ]
+};
+
+const jsonLdSoftware = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AIBgin",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web",
+  "description": "FERPA, COPPA and KCSiE-compliant AI chatbot platform for K-12 schools",
+  "offers": { "@type": "Offer", "price": "49", "priceCurrency": "USD" }
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -121,6 +162,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Script
+          id="json-ld-faq"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }}
+        />
+        <Script
+          id="json-ld-software"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
         />
       </head>
       <body>{children}</body>

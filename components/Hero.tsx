@@ -28,10 +28,10 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-[-0.02em] mb-6 animate-fade-up animate-delay-100">
-              <span className="text-white">Safe AI for</span><br/>
-              <span className="gradient-text">every classroom,</span><br/>
-              <span className="text-white">trusted by</span>{" "}
-              <span className="gradient-text">every admin.</span>
+              <span className="text-white">Safe AI Chatbot Platform</span><br/>
+              <span className="gradient-text">for K-12 Schools</span><br/>
+              <span className="text-white">&amp;</span>{" "}
+              <span className="gradient-text">Districts</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-6 animate-fade-up animate-delay-200 max-w-xl">
@@ -93,6 +93,7 @@ export default function Hero() {
           <div className="hidden lg:block animate-fade-up animate-delay-300">
             {/* REPLACE WITH: /public/hero-dashboard.png · 1200×900 · AIBgin teacher dashboard screenshot */}
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.09] bg-gradient-to-br from-ink-800/80 to-ink-950/90 shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
+              aria-label="AIBgin school dashboard showing real-time AIBguard safety audit for K-12 classroom AI chatbot"
               style={{ aspectRatio: "4/3" }}>
               {/* Fake browser chrome */}
               <div className="h-9 bg-white/[0.04] border-b border-white/[0.06] flex items-center px-4 gap-2 shrink-0">

@@ -14,9 +14,9 @@ const productLinks = [
 ];
 
 const legalLinks = [
-  { label: "Privacy Policy",      href: "#" },
-  { label: "Terms of Service",    href: "#" },
-  { label: "GDPR Statement",      href: "#" },
+  { label: "Privacy Policy",      href: "/privacy-policy" },
+  { label: "Terms of Service",    href: "/terms" },
+  { label: "GDPR Statement",      href: "/gdpr" },
   { label: "EU AI Act Compliance", href: "#" },
 ];
 
@@ -90,7 +90,7 @@ export default function Footer() {
           <div className="flex items-center gap-5 text-xs text-slate-600">
             <a href="mailto:info@aibgin.info" className="hover:text-brand-cyan transition-colors">info@aibgin.info</a>
             <a href="mailto:support@aibgin.info" className="hover:text-brand-cyan transition-colors">support@aibgin.info</a>
-            <a href="https://app.aibgin.cz" target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">app.aibgin.cz</a>
+            <a href="#waitlist" className="hover:text-brand-cyan transition-colors">Join Waitlist →</a>
           </div>
         </div>
       </div>
