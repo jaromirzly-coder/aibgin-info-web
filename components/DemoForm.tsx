@@ -31,13 +31,29 @@ export default function DemoForm() {
 
             <ul className="space-y-4 mb-10">
               {[
-                { icon: "🎯", text: "30-min live walkthrough with your team" },
-                { icon: "📋", text: "Full compliance documentation pack" },
-                { icon: "🆓", text: "Free 30-day trial — up to 2 classrooms" },
-                { icon: "🤝", text: "Dedicated onboarding for District plans" },
+                {
+                  icon: <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" strokeWidth="1.5"/><circle cx="9" cy="9" r="3.5" stroke="currentColor" strokeWidth="1.5"/><circle cx="9" cy="9" r="1" fill="currentColor"/></svg>,
+                  color: "text-brand-indigo",
+                  text: "30-min live walkthrough with your team",
+                },
+                {
+                  icon: <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 2h7l4 4v10a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" strokeWidth="1.5"/><path d="M11 2v4h4M6 9h6M6 12h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+                  color: "text-brand-cyan",
+                  text: "Full compliance documentation pack",
+                },
+                {
+                  icon: <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9h14M9 2v14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M5 5l8 8M13 5l-8 8" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.3"/></svg>,
+                  color: "text-brand-emerald",
+                  text: "Free 30-day trial — up to 2 classrooms",
+                },
+                {
+                  icon: <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2L2 6v5c0 3.9 3 7.3 7 8 4-0.7 7-4.1 7-8V6L9 2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/><path d="M6.5 9l2 2 3.5-3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+                  color: "text-brand-violet",
+                  text: "Dedicated onboarding for District plans",
+                },
               ].map((item) => (
                 <li key={item.text} className="flex items-start gap-3 text-sm text-slate-300">
-                  <span className="text-lg leading-none mt-0.5">{item.icon}</span>
+                  <span className={`shrink-0 mt-0.5 ${item.color}`}>{item.icon}</span>
                   {item.text}
                 </li>
               ))}

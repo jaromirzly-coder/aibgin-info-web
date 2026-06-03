@@ -1,10 +1,40 @@
 const frameworks = [
-  { name: "EU AI Act",     detail: "Article 28b — High-risk AI in education",   icon: "EU", color: "from-blue-600 to-indigo-600" },
-  { name: "GDPR",          detail: "No student PII collected. EU residency.",    icon: "🔐", color: "from-brand-indigo to-brand-violet" },
-  { name: "UK GDPR",       detail: "Aligned with ICO guidance for schools",      icon: "GB", color: "from-red-700 to-red-500" },
-  { name: "NIST AI RMF",   detail: "Govern · Map · Measure · Manage",           icon: "US", color: "from-slate-600 to-slate-500" },
-  { name: "ISO 42001",     detail: "AI Management System standard",              icon: "✓",  color: "from-brand-emerald to-teal-500" },
-  { name: "KCSiE",         detail: "UK statutory safeguarding guidance",         icon: "👶", color: "from-brand-cyan to-sky-500" },
+  {
+    name: "EU AI Act",
+    detail: "Article 28b — High-risk AI in education",
+    icon: <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.5" stroke="white" strokeWidth="1.2"/><path d="M7 1.5C5 4 5 10 7 12.5" stroke="white" strokeWidth="1" strokeLinecap="round"/><path d="M1.5 7h11" stroke="white" strokeWidth="1" strokeLinecap="round"/></svg>,
+    color: "from-blue-600 to-indigo-600",
+  },
+  {
+    name: "GDPR",
+    detail: "No student PII collected. EU residency.",
+    icon: <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="2" y="7" width="10" height="6" rx="1.5" stroke="white" strokeWidth="1.2"/><path d="M4.5 7V5a2.5 2.5 0 015 0v2" stroke="white" strokeWidth="1.2" strokeLinecap="round"/><circle cx="7" cy="10" r="1" fill="white"/></svg>,
+    color: "from-brand-indigo to-brand-violet",
+  },
+  {
+    name: "UK GDPR",
+    detail: "Aligned with ICO guidance for schools",
+    icon: <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1.5L12.5 4.5v4c0 2.5-2.5 4.5-5.5 5S1.5 11 1.5 8.5v-4L7 1.5z" stroke="white" strokeWidth="1.2" strokeLinejoin="round"/></svg>,
+    color: "from-red-700 to-red-500",
+  },
+  {
+    name: "NIST AI RMF",
+    detail: "Govern · Map · Measure · Manage",
+    icon: <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.5" y="1.5" width="11" height="11" rx="2" stroke="white" strokeWidth="1.2"/><path d="M4 7h6M7 4v6" stroke="white" strokeWidth="1.2" strokeLinecap="round"/></svg>,
+    color: "from-slate-600 to-slate-500",
+  },
+  {
+    name: "ISO 42001",
+    detail: "AI Management System standard",
+    icon: <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7l2.5 2.5L11 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    color: "from-brand-emerald to-teal-500",
+  },
+  {
+    name: "KCSiE",
+    detail: "UK statutory safeguarding guidance",
+    icon: <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="5" r="2.5" stroke="white" strokeWidth="1.2"/><path d="M2 12v-1a5 5 0 0110 0v1" stroke="white" strokeWidth="1.2" strokeLinecap="round"/></svg>,
+    color: "from-brand-cyan to-sky-500",
+  },
 ];
 
 export default function Compliance() {

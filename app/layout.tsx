@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://aibgin.info/og-image.svg",
+        url: "https://aibgin.info/og-image.png",
         width: 1200,
         height: 630,
         alt: "AIBgin — Safe AI Platform for Schools",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "AIBgin — Safe AI for Schools | US & UK",
     description:
       "Zero student registration. QR code access. Real-time safety audit on every response.",
-    images: ["https://aibgin.info/og-image.svg"],
+    images: ["https://aibgin.info/og-image.png"],
   },
   robots: {
     index: true,

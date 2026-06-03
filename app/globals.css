@@ -78,6 +78,36 @@ body {
 .animate-delay-200 { animation-delay: 200ms; }
 .animate-delay-300 { animation-delay: 300ms; }
 .animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+.animate-delay-600 { animation-delay: 600ms; }
+
+/* Section divider shimmer */
+.section-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99,102,241,0.3) 40%, rgba(6,182,212,0.3) 60%, transparent);
+}
+
+/* Graphic placeholder */
+.graphic-placeholder {
+  background: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(6,182,212,0.04) 100%);
+  border: 1px dashed rgba(255,255,255,0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.2);
+  font-family: 'Plus Jakarta Sans', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* Glow border on hover */
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(99,102,241,0.15), 0 0 0 1px rgba(99,102,241,0.2);
+}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 6px; }
