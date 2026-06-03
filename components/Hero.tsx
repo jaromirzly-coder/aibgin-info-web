@@ -86,62 +86,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: product mockup placeholder */}
+          {/* Right: product mockup image */}
           <div className="hidden lg:block animate-fade-up animate-delay-300">
-            {/* REPLACE WITH: /public/hero-dashboard.png · 1200×900 · AIBgin teacher dashboard screenshot */}
-            <div className="relative rounded-2xl overflow-hidden border border-white/[0.09] bg-gradient-to-br from-ink-800/80 to-ink-950/90 shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
-              aria-label="AIBgin school dashboard showing real-time AIBguard safety audit for K-12 classroom AI chatbot"
-              style={{ aspectRatio: "4/3" }}>
-              {/* Fake browser chrome */}
-              <div className="h-9 bg-white/[0.04] border-b border-white/[0.06] flex items-center px-4 gap-2 shrink-0">
-                <div className="flex gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-red-500/50" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-green-500/40" />
-                </div>
-                <div className="flex-1 mx-4 h-5 bg-white/[0.04] rounded-md border border-white/[0.06] flex items-center px-3">
-                  <span className="text-[9px] text-slate-600 font-mono">app.aibgin.cz/dashboard</span>
-                </div>
-              </div>
-              {/* Fake dashboard content */}
-              <div className="p-4 space-y-3">
-                {/* Header row */}
-                <div className="flex items-center justify-between">
-                  <div className="h-5 w-36 bg-white/[0.05] rounded-md" />
-                  <div className="flex gap-2">
-                    <div className="h-5 w-16 bg-brand-emerald/10 border border-brand-emerald/20 rounded-full flex items-center justify-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-brand-emerald animate-pulse mr-1" />
-                      <div className="h-2 w-8 bg-brand-emerald/30 rounded" />
-                    </div>
-                  </div>
-                </div>
-                {/* Stat cards */}
-                <div className="grid grid-cols-3 gap-2">
-                  {["bg-brand-indigo/10","bg-brand-cyan/10","bg-brand-emerald/10"].map((c,i) => (
-                    <div key={i} className={`${c} rounded-xl p-3 border border-white/[0.05]`}>
-                      <div className="h-6 w-8 bg-white/[0.1] rounded mb-2" />
-                      <div className="h-2 w-14 bg-white/[0.07] rounded mb-1" />
-                      <div className="h-1.5 w-10 bg-white/[0.04] rounded" />
-                    </div>
-                  ))}
-                </div>
-                {/* Table rows */}
-                <div className="space-y-1.5">
-                  {[85,70,60,45,90].map((w,i) => (
-                    <div key={i} className="flex items-center gap-3 py-1.5 border-b border-white/[0.04]">
-                      <div className="w-5 h-5 rounded bg-white/[0.06]" />
-                      <div className="h-2 bg-white/[0.07] rounded flex-1" style={{width:`${w}%`}} />
-                      <div className="w-12 h-4 bg-brand-emerald/10 rounded-full border border-brand-emerald/20" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-              {/* Overlay placeholder label */}
-              <div className="absolute inset-0 flex items-end justify-end p-3 pointer-events-none">
-                <span className="text-[9px] font-mono text-white/15 bg-black/20 px-2 py-1 rounded">
-                  hero-dashboard.png · 1200×900
-                </span>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden border border-white/[0.09] shadow-[0_40px_80px_rgba(0,0,0,0.5)]">
+              <img src="/hero-dashboard.png" alt="AIBgin school dashboard showing real-time AIBguard safety audit for K-12 classroom AI chatbot" width="1200" height="900" className="w-full h-auto" />
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-4 -left-4 glass rounded-2xl p-4 border border-brand-emerald/20 shadow-lg">
