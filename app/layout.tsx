@@ -129,7 +129,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchemas) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <div style={{ background: "#1a1a2e", color: "#fff", textAlign: "center", padding: "12px", fontSize: "14px", fontWeight: "600", position: "sticky", top: "0", zIndex: 9999 }}>
+          Full version launching 1 July 2026 — we're preparing something exceptional for you
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
