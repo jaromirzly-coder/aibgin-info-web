@@ -1,3 +1,15 @@
+const summerFeatures = [
+  "1 classroom or group",
+  "20–35 children · 1 teacher",
+  "10,000 queries/month",
+  "AIBguard real-time audit",
+  "QR code access — no student registration",
+  "Crisis detection + Helpline 116 111",
+  "Basic audit log",
+  "Onboarding + safety configuration",
+  "🏅 AIBgin Pilot School Certificate",
+];
+
 const plans = [
   {
     name: "Starter",
@@ -84,6 +96,54 @@ export default function Pricing() {
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mt-6 text-sm">
             <span className="w-2 h-2 bg-brand-emerald rounded-full"></span>
             <span className="text-slate-300">Save <strong className="text-brand-emerald">20%</strong> with annual billing</span>
+          </div>
+        </div>
+
+        {/* ── Summer Package ── */}
+        <div className="relative mb-10 rounded-2xl border-2 border-amber-400/50 bg-gradient-to-br from-amber-950/50 via-amber-900/20 to-yellow-950/30 p-7 overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-amber-400/10 blur-[80px] pointer-events-none" />
+
+          <div className="absolute -top-3.5 left-6">
+            <span className="text-xs font-black px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 text-amber-950 tracking-wide">
+              🌞 SUMMER PACKAGE — LIMITED TIME
+            </span>
+          </div>
+
+          <div className="relative flex flex-col md:flex-row md:items-center gap-8 pt-3">
+            {/* Name + price */}
+            <div className="shrink-0 min-w-[180px]">
+              <h3 className="text-xl font-black text-white mb-3">Summer Testing Program</h3>
+              <div className="flex items-end gap-1.5">
+                <span className="text-4xl font-black text-amber-300">$59</span>
+                <span className="text-slate-400 text-sm mb-1.5">for 2 months</span>
+              </div>
+              <div className="text-xs text-amber-400/80 mt-1.5">July + August 2026 · No automatic renewal</div>
+            </div>
+
+            <div className="hidden md:block w-px self-stretch bg-amber-400/20" />
+
+            {/* Features grid */}
+            <ul className="flex-1 grid sm:grid-cols-2 gap-x-8 gap-y-2.5">
+              {summerFeatures.map((f) => (
+                <li key={f} className="flex items-start gap-2.5 text-sm text-slate-300">
+                  <svg className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M13.707 4.293a1 1 0 010 1.414l-6.5 6.5a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L6.5 10.086l5.793-5.793a1 1 0 011.414 0z" clipRule="evenodd"/>
+                  </svg>
+                  {f}
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA */}
+            <div className="shrink-0">
+              <a
+                href="mailto:hello@aibgin.com"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-400 text-amber-950 font-black px-7 py-4 rounded-xl text-sm hover:opacity-90 transition-opacity shadow-lg shadow-amber-500/20 whitespace-nowrap"
+              >
+                Get Summer Package →
+              </a>
+              <p className="text-xs text-slate-600 mt-2 text-center">hello@aibgin.com</p>
+            </div>
           </div>
         </div>
 
