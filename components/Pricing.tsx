@@ -100,14 +100,14 @@ export default function Pricing() {
         </div>
 
         {/* ── Summer Package ── */}
-        <div className="relative mb-10 rounded-2xl border-2 border-amber-400/50 bg-gradient-to-br from-amber-950/50 via-amber-900/20 to-yellow-950/30 p-7 overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-amber-400/10 blur-[80px] pointer-events-none" />
-
-          <div className="absolute -top-3.5 left-6">
+        <div className="relative mb-10 pt-4">
+          <div className="absolute top-0 left-6 z-10">
             <span className="text-xs font-black px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 text-amber-950 tracking-wide">
               🌞 SUMMER PACKAGE — LIMITED TIME
             </span>
           </div>
+          <div className="rounded-2xl border-2 border-amber-400/50 bg-gradient-to-br from-amber-950/50 via-amber-900/20 to-yellow-950/30 p-7 overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-amber-400/10 blur-[80px] pointer-events-none" />
 
           <div className="relative flex flex-col md:flex-row md:items-center gap-8 pt-3">
             {/* Name + price */}
@@ -144,6 +144,7 @@ export default function Pricing() {
               </a>
               <p className="text-xs text-slate-600 mt-2 text-center">hello@aibgin.com</p>
             </div>
+          </div>
           </div>
         </div>
 
