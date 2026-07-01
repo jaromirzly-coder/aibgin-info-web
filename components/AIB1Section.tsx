@@ -41,7 +41,7 @@ export default function AIB1Section() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://www.youtube.com/watch?v=sCPNyop2V0Y"
+            href="https://www.youtube.com/watch?v=JMPORPfxhZM"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-indigo to-brand-cyan text-white px-8 py-4 rounded-2xl font-bold text-sm hover:opacity-90 transition-all shadow-glow-indigo"
