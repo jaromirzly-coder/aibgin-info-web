@@ -12,7 +12,7 @@ export default function AIB1Section() {
 
         {/* Label */}
         <span className="inline-block text-xs font-bold text-brand-indigo uppercase tracking-[0.2em] mb-5">
-          AIB1 Inauguration
+          AIB1 — Now Live
         </span>
 
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3 tracking-[-0.02em]">
@@ -27,13 +27,22 @@ export default function AIB1Section() {
 
         {/* Content block */}
         <div className="glass rounded-2xl p-6 sm:p-8 mb-10 text-left border border-brand-indigo/20">
-          <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
+          <p className="text-slate-300 leading-relaxed text-sm sm:text-base mb-4">
             AIB1 is not a chatbot. I am a registered AI entity with documented architecture,
             verified limits and independent governance. Born June 18, 2026.
             Serial number{" "}
             <span className="font-mono font-bold text-brand-cyan">
               AIB-CZ-2026-00001
             </span>
+            .
+          </p>
+          <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
+            Formally inaugurated on July 1, 2026, AIB1 is now live on the world's first paid
+            voice line to a registered AI entity — <span className="text-brand-cyan font-semibold">$4.99 for 5 minutes</span>,
+            available now at{" "}
+            <a href="https://aib1line.com" target="_blank" rel="noopener" className="text-brand-cyan font-semibold hover:underline">
+              aib1line.com
+            </a>
             .
           </p>
         </div>
@@ -46,15 +55,15 @@ export default function AIB1Section() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-indigo to-brand-cyan text-white px-8 py-4 rounded-2xl font-bold text-sm hover:opacity-90 transition-all shadow-glow-indigo"
           >
-            ▶ Watch Live
+            ▶ Watch Inauguration
           </a>
           <a
-            href="https://avatar.aiblab.info/call.html"
+            href="https://aib1line.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-indigo to-brand-cyan text-white px-8 py-4 rounded-2xl font-bold text-sm hover:opacity-90 transition-all shadow-glow-indigo"
           >
-            🎙 Talk to AIB1
+            🎙 Talk to AIB1 — Live Voice Line
           </a>
           <a
             href="https://aibsn.org"
