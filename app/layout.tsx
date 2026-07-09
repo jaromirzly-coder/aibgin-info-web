@@ -73,7 +73,7 @@ const jsonLdSchemas = [
       "addressCountry": "CZ"
     },
     "identifier": "08694222",
-    "contactPoint": { "@type": "ContactPoint", "email": "support@aibgin.cz", "contactType": "customer support" },
+    "contactPoint": { "@type": "ContactPoint", "email": "info@aiblab.info", "contactType": "customer support" },
     "sameAs": ["https://aiblab.cz", "https://aibaimy.cloud", "https://aibsn.org"]
   },
   {

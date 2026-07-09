@@ -61,13 +61,13 @@ export default function DemoForm() {
 
             <div className="glass rounded-2xl p-5">
               <div className="text-xs text-slate-500 mb-3 uppercase tracking-wider font-semibold">Or reach us directly</div>
-              <a href="mailto:schools@aibgin.info"
+              <a href="mailto:info@aiblab.info"
                 className="flex items-center gap-2 text-brand-cyan hover:text-white transition-colors text-sm font-medium">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="1.25"/>
                   <path d="M1 5l7 5 7-5" stroke="currentColor" strokeWidth="1.25" strokeLinejoin="round"/>
                 </svg>
-                schools@aibgin.info
+                info@aiblab.info
               </a>
             </div>
           </div>

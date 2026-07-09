@@ -137,12 +137,12 @@ export default function Pricing() {
             {/* CTA */}
             <div className="shrink-0">
               <a
-                href="mailto:hello@aibgin.com"
+                href="mailto:info@aiblab.info"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-400 text-amber-950 font-black px-7 py-4 rounded-xl text-sm hover:opacity-90 transition-opacity shadow-lg shadow-amber-500/20 whitespace-nowrap"
               >
                 Get Summer Package →
               </a>
-              <p className="text-xs text-slate-600 mt-2 text-center">hello@aibgin.com</p>
+              <p className="text-xs text-slate-600 mt-2 text-center">info@aiblab.info</p>
             </div>
           </div>
           </div>
