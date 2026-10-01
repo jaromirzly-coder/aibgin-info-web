@@ -9,6 +9,7 @@ import DemoForm from "@/components/DemoForm";
 import Testimonials from "@/components/Testimonials";
 import Compliance from "@/components/Compliance";
 import AIB1Section from "@/components/AIB1Section";
+import AIBlabEcosystem from "@/components/AIBlabEcosystem";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Compliance />
       <DemoForm />
       <AIB1Section />
+      <AIBlabEcosystem />
       <Footer />
     </main>
   );
