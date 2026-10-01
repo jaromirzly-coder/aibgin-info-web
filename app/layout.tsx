@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     template: "%s | AIBgin",
   },
   description:
-    "AIBgin is the FERPA, COPPA & KCSiE-compliant AI chatbot platform for K-12 schools, MATs, and districts. No student accounts. QR code access. Real-time AIBguard safety audit on every response.",
+    "In development: AIBgin, a safe AI platform for K-12 schools, built on AIB.core, the engine behind AIBEVA. Designed for FERPA, COPPA and KCSiE. No student accounts by design.",
   keywords: [
     "AI for schools", "safe AI chatbot K-12", "classroom AI assistant",
-    "school district AI", "COPPA compliant AI", "FERPA compliant AI",
+    "school district AI", "COPPA AI for schools", "FERPA AI for schools",
     "KCSiE safeguarding AI", "MAT AI platform", "EdTech AI safety",
     "child safe AI chatbot", "QR code AI school", "school AI chatbot UK",
     "school AI chatbot US", "AIBgin", "AI safeguarding tool",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIBgin — Safe AI for Schools | US & UK",
     description:
-      "Zero student registration. QR code access. Real-time safety audit on every AI response. FERPA, COPPA & KCSiE compliant.",
+      "In development: safe AI for the classroom, built on AIB.core, the engine behind AIBEVA. Designed for FERPA, COPPA and KCSiE.",
     url: "https://aibgin.info",
     siteName: "AIBgin",
     type: "website",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AIBgin — Safe AI for Schools | US & UK",
     description:
-      "Zero student registration. QR code access. Real-time safety audit on every response.",
+      "In development: safe AI for the classroom, built on AIB.core, the engine behind AIBEVA.",
     images: ["https://aibgin.info/og-image.png"],
   },
   robots: {
@@ -63,8 +63,8 @@ const jsonLdSchemas = [
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "SAY TO PAY s.r.o.",
-    "url": "https://aibgin.cz",
-    "logo": "https://aibgin.cz/logo.png",
+    "alternateName": "AIBlab",
+    "url": "https://aiblab.info",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Zámostní 1155/27",
@@ -74,7 +74,7 @@ const jsonLdSchemas = [
     },
     "identifier": "08694222",
     "contactPoint": { "@type": "ContactPoint", "email": "info@aiblab.info", "contactType": "customer support" },
-    "sameAs": ["https://aiblab.cz", "https://aibaimy.cloud", "https://aibsn.org"]
+    "sameAs": ["https://aiblab.info", "https://aibeva.com", "https://aibsn.org", "https://aibguardian.info", "https://aibfamily.cloud"]
   },
   {
     "@context": "https://schema.org",
@@ -82,27 +82,8 @@ const jsonLdSchemas = [
     "name": "AIBgin",
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
-    "description": "Certifikovaný AI chatbot pro školy, školky a zájmové kroužky. 5 vrstev ochrany AIBguard, fail-closed architektura, krizová detekce 116 111, QR přístup bez registrace dětí.",
-    "url": "https://aibgin.cz",
-    "offers": {
-      "@type": "Offer",
-      "price": "59",
-      "priceCurrency": "USD",
-      "priceValidUntil": "2026-08-31",
-      "availability": "https://schema.org/InStock",
-      "seller": { "@type": "Organization", "name": "SAY TO PAY s.r.o." }
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "Jak děti přistupují k AIBgin bez registrace?", "acceptedAnswer": { "@type": "Answer", "text": "Učitel promítne QR kód vygenerovaný v dashboardu. Dítě ho naskenuje a okamžitě přistupuje k platformě bez registrace, e-mailu ani hesla. Po skončení hodiny se session automaticky resetuje." } },
-      { "@type": "Question", "name": "Je AIBgin v souladu s EU AI Act a GDPR?", "acceptedAnswer": { "@type": "Answer", "text": "Ano. AIBgin bylo navrženo v souladu s EU 2024/1689. AI systémy ve vzdělávání jsou HIGH-RISK — AIBgin splňuje všechny požadavky: risk assessment, data governance, transparentnost, lidský dohled." } },
-      { "@type": "Question", "name": "Co se stane při detekci krizové situace?", "acceptedAnswer": { "@type": "Answer", "text": "4. vrstva ochrany detekuje krizové vzorce. Správce je okamžitě notifikován a systém zahájí protokol pro kontakt s Linkou bezpečí 116 111." } },
-      { "@type": "Question", "name": "Jak rychle lze AIBgin nastavit?", "acceptedAnswer": { "@type": "Answer", "text": "Nastavení trvá 30 minut. První QR kód pro třídu lze mít za hodinu od registrace." } },
-      { "@type": "Question", "name": "How many queries are included in the price?", "acceptedAnswer": { "@type": "Answer", "text": "The Summer Package for 59 USD includes 10,000 queries per class per month, valid July + August 2026." } }
-    ]
+    "description": "In development: a safe AI platform for K-12 schools, built on AIB.core, the engine behind AIBEVA. Designed for FERPA, COPPA and KCSiE, with no student accounts.",
+    "url": "https://aibgin.info"
   }
 ];
 

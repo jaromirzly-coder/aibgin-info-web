@@ -8,9 +8,8 @@ const ecosystem = [
 const productLinks = [
   { label: "How It Works",    href: "#how-it-works" },
   { label: "AIBguard Safety", href: "#features" },
-  { label: "Pricing",         href: "#pricing" },
   { label: "Compliance",      href: "#compliance" },
-  { label: "Request Demo",    href: "#demo" },
+  { label: "Meet AIBEVA",     href: "https://aibeva.com" },
 ];
 
 const legalLinks = [
@@ -39,7 +38,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-4">
-              Safe AI platform for schools, MATs, and child-serving institutions. EU AI Act compliant. Zero child accounts.
+              Safe AI platform for schools, MATs, and child-serving institutions. In development. Designed for the EU AI Act, with zero child accounts.
             </p>
             <p className="text-slate-600 text-xs">AIBlab · SAY TO PAY s.r.o.</p>
             <p className="text-slate-600 text-xs">Czech Republic · EU</p>
@@ -89,7 +88,7 @@ export default function Footer() {
           <p className="text-xs text-slate-600">© 2026 AIBgin · AIBlab · SAY TO PAY s.r.o. All rights reserved.</p>
           <div className="flex items-center gap-5 text-xs text-slate-600">
             <a href="mailto:info@aiblab.info" className="hover:text-brand-cyan transition-colors">info@aiblab.info</a>
-            <a href="#demo" className="hover:text-brand-cyan transition-colors">Request Demo →</a>
+            <a href="https://aibeva.com" className="hover:text-brand-cyan transition-colors">Meet AIBEVA →</a>
           </div>
         </div>
       </div>

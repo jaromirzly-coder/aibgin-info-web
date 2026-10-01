@@ -19,12 +19,12 @@ export default function Hero() {
           {/* Left: copy */}
           <div>
             {/* Live badge */}
-            <div className="inline-flex items-center gap-2.5 glass rounded-full px-4 py-2 mb-8 animate-fade-up">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-brand-emerald opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-emerald"></span>
+            <div className="inline-flex items-start gap-2.5 glass rounded-2xl px-4 py-2.5 mb-8 max-w-xl animate-fade-up">
+              <span className="relative flex h-2 w-2 mt-1 shrink-0">
+                <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-amber-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
               </span>
-              <span className="text-xs font-semibold text-slate-300 tracking-wide">FERPA · COPPA · KCSiE · EU AI Act</span>
+              <span className="text-xs font-semibold text-slate-300 tracking-wide">In development — AIBgin is being built on AIB.core, the engine behind AIBEVA, made for the classroom.</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-[-0.02em] mb-6 animate-fade-up animate-delay-100">
@@ -32,17 +32,17 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-6 animate-fade-up animate-delay-200 max-w-xl">
-              AIBgin puts real-time AI safety between every student and every response.
-              No child accounts. No IT setup. Live in 30 minutes.
+              AIBgin will put real-time AI safety between every student and every response.
+              No child accounts. No IT setup.
             </p>
 
             {/* Inline trust pills */}
             <div className="flex flex-wrap gap-2 mb-10 animate-fade-up animate-delay-200">
               {[
-                "Zero student accounts",
-                "30-min setup",
-                "EU data residency",
-                "Article 28b ready",
+                "Designed for FERPA · COPPA · KCSiE",
+                "Designed for the EU AI Act",
+                "No student accounts by design",
+                "EU data residency by design",
               ].map((t) => (
                 <span key={t}
                   className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-300 bg-white/[0.05] border border-white/[0.09] px-3 py-1.5 rounded-full">
@@ -56,25 +56,24 @@ export default function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-14 animate-fade-up animate-delay-300">
-              <a href="#demo"
+              <a href="https://aibeva.com"
                 className="group relative inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-indigo to-brand-cyan text-white px-8 py-4 rounded-2xl font-bold text-base hover:opacity-90 transition-all shadow-glow-indigo hover:-translate-y-0.5">
-                Request a Free Demo
+                Meet AIBEVA, available now
                 <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                 </svg>
               </a>
-              <a href="#pricing"
+              <a href="#how-it-works"
                 className="inline-flex items-center justify-center gap-2 glass text-slate-300 hover:text-white px-8 py-4 rounded-2xl font-semibold text-base hover:bg-white/[0.08] transition-all">
-                See Pricing
+                How it will work
               </a>
             </div>
 
             {/* Stat row */}
-            <div className="grid grid-cols-4 gap-3 animate-fade-up animate-delay-400">
+            <div className="grid grid-cols-3 gap-3 animate-fade-up animate-delay-400">
               {[
                 { v: "0",    l: "Child accounts", s: "QR only" },
                 { v: "5",    l: "Safety layers",  s: "AIBguard" },
-                { v: "<1s",  l: "Audit latency",  s: "per reply" },
                 { v: "EU",   l: "Data residency", s: "always" },
               ].map((s) => (
                 <div key={s.l} className="glass rounded-xl p-3 text-center hover:bg-white/[0.07] transition-colors">
@@ -102,7 +101,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-white">AIBguard Active</div>
-                  <div className="text-[10px] text-slate-500">All 5 layers running</div>
+                  <div className="text-[10px] text-slate-500">Design preview</div>
                 </div>
               </div>
             </div>

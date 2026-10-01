@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 const links = [
   { label: "How It Works", href: "#how-it-works" },
   { label: "Safety",       href: "#features" },
-  { label: "Pricing",      href: "#pricing" },
   { label: "Compliance",   href: "#compliance" },
 ];
 
@@ -49,12 +48,12 @@ export default function Navbar() {
 
         {/* CTAs */}
         <div className="hidden md:flex items-center gap-3">
-          <a href="#demo"
+          <a href="https://aibeva.com"
             className="relative inline-flex items-center gap-2 bg-gradient-to-r from-brand-indigo to-brand-cyan text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity shadow-glow-indigo">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M7 1l1.5 4.5H13l-3.8 2.8 1.5 4.5L7 10l-3.7 2.8 1.5-4.5L1 5.5h4.5L7 1z" fill="white"/>
             </svg>
-            Request Demo
+            Meet AIBEVA
           </a>
         </div>
 
@@ -76,9 +75,9 @@ export default function Navbar() {
             </a>
           ))}
           <div className="border-t border-white/[0.08] mt-2 pt-2">
-            <a href="#demo" onClick={() => setOpen(false)}
+            <a href="https://aibeva.com" onClick={() => setOpen(false)}
               className="block w-full text-center bg-gradient-to-r from-brand-indigo to-brand-cyan text-white py-3 rounded-xl text-sm font-semibold">
-              Request Demo →
+              Meet AIBEVA →
             </a>
           </div>
         </div>

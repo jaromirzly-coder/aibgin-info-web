@@ -1,80 +1,10 @@
-# AIBgin — Safe AI Chatbot Platform for K-12 Schools
-> FERPA, COPPA and KCSiE-compliant AI platform. Zero student accounts. QR code access. Real-time AIBguard safety audit.
+# AIBgin — safe AI for schools (in development)
+> AIBgin is in development. It is being built on AIB.core, the engine behind AIBEVA, and is made for the classroom. It is not available for purchase yet.
 
 ## Key facts
-- Pricing: Starter $49/mo, Growth $149/mo, District $499/mo
-- Compliance: FERPA, COPPA, KCSiE, EU AI Act, GDPR, ISO 42001
-- Contact: schools@aibgin.info
-
-## What is AIBgin?
-
-AIBgin is a white-label AI chatbot platform designed specifically for K-12 schools, MATs (Multi-Academy Trusts), and school districts. Built with safety at its core, AIBgin provides real-time AI guardrailing through AIBguard — a dual-model audit layer that runs on every student response.
-
-### Key Features
-
-- **Zero Student Accounts**: Students access AIBgin via QR code only. No registration, no personal data collection, no parent consent forms needed.
-- **Real-Time Safety Audit**: Every AI response is evaluated by AIBguard (Claude Sonnet + Haiku). Fail-closed: any doubt = block.
-- **5-Year Audit Log**: Every interaction is logged with the safety verdict and reason code, stored EU-only for Ofsted inspection.
-- **Age-Appropriate Profiles**: Separate guardrails for KS1, KS2, KS3/4, and Post-16 students.
-- **Crisis Detection**: Purpose-trained detection of self-harm signals, grooming patterns, and distress. Immediate escalation to safeguarding lead.
-- **Per-Tenant Encryption**: AES-256 encryption keyed per school. No data commingling.
-- **EU Data Residency**: All data stored and processed within the EU. GDPR Article 46 compliant. No US transfers.
-
-### Compliance
-
-- **EU AI Act**: Article 28b high-risk AI in education
-- **GDPR**: No student PII. EU-only processing. Article 28 DPA ready.
-- **UK GDPR & KCSiE**: Aligned with ICO guidance and statutory safeguarding requirements
-- **COPPA-aligned**: Zero child account creation. Child-safe by design.
-- **FERPA**: No student directory information collected.
-- **ISO 42001**: AI Management System standards
-- **NIST AI RMF**: Govern, Map, Measure, Manage
-
-### Pricing Plans
-
-1. **Starter** — $49/mo
-   - Up to 5 classrooms
-   - 50,000 queries/month
-   - AIBguard audit
-   - Age-appropriate profiles
-   - 1-year audit log
-   - Email support
-
-2. **Growth** — $149/mo (Most Popular)
-   - Up to 20 classrooms
-   - 200,000 queries/month
-   - Everything in Starter +
-   - Crisis detection
-   - Safeguarding lead escalation
-   - Custom guardrails
-   - 5-year audit log
-   - Priority support
-
-3. **District** — $499/mo
-   - Unlimited classrooms
-   - Unlimited queries
-   - Everything in Growth +
-   - White-label branding
-   - SSO/LDAP
-   - Dedicated account manager
-   - SLA 99.9% uptime
-   - Custom data retention
-
-### Deployment
-
-- **Setup time**: 30 minutes (no IT infrastructure required)
-- **Runtime**: Fully cloud-based, no on-prem installation
-- **Browser-native**: Works on any device with a modern browser
-- **Reliability**: SLA 99.9% uptime on District plans
-
-### Contact & Support
-
-- **Sales & Demo**: schools@aibgin.info
-- **Technical Support**: support@aibgin.info
-- **General Enquiries**: info@aibgin.info
-
----
-
-**About AIBlab**
-
-AIBgin is built and operated by AIBlab (SAY TO PAY s.r.o.), a Czech EdTech firm specializing in child-safe AI and safeguarding technology. Part of the AIB ecosystem (AIBgin for schools, AIBguard for safety, AIBSN for identity).
+- Status: in development, not yet available
+- Designed for: FERPA, COPPA, KCSiE, EU AI Act, GDPR
+- No student accounts by design; QR code access for classes
+- Built by SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU
+- Available now from the same company: AIBEVA, a personal AI assistant for Windows — https://aibeva.com
+- Contact: info@aiblab.info

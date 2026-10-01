@@ -43,16 +43,16 @@ export default function Compliance() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           <div>
-            <span className="inline-block text-xs font-bold text-brand-emerald uppercase tracking-[0.2em] mb-4">Compliance</span>
+            <span className="inline-block text-xs font-bold text-brand-emerald uppercase tracking-[0.2em] mb-4">Designed for compliance</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-5 leading-tight">
-              Every box ticked.<br/>
-              <span className="gradient-text">Before you even ask.</span>
+              Built for the rules<br/>
+              <span className="gradient-text">schools already follow.</span>
             </h2>
             <p className="text-slate-400 leading-relaxed mb-4">
               AIBgin is built on the principle that schools should never have to choose between educational innovation and their statutory safeguarding duties.
             </p>
             <p className="text-slate-400 leading-relaxed mb-8">
-              Our compliance framework covers EU and UK regulatory requirements, international AI standards, and child protection legislation — all documented, auditable, and available for inspection.
+              AIBgin is being designed around EU and UK regulatory requirements, international AI standards, and child protection legislation. It is in development and not yet certified.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-8">
@@ -64,9 +64,9 @@ export default function Compliance() {
               ))}
             </div>
 
-            <a href="#demo"
+            <a href="https://aibeva.com"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-indigo to-brand-cyan text-white px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity">
-              Request compliance documentation →
+              Meet AIBEVA, available now →
             </a>
           </div>
 
