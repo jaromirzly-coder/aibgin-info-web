@@ -38,7 +38,7 @@ export default function AIB1Section() {
           </p>
           <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
             Formally inaugurated on July 1, 2026, AIB1 is now live on the world's first paid
-            voice line to a registered AI entity — <span className="text-brand-cyan font-semibold">$4.99 for 5 minutes</span>,
+            voice line to a registered AI entity,
             available now at{" "}
             <a href="https://aib1line.com" target="_blank" rel="noopener" className="text-brand-cyan font-semibold hover:underline">
               aib1line.com

@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/[0.06] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-slate-600">© 2026 AIBgin · AIBlab · SAY TO PAY s.r.o. All rights reserved.</p>
+          <p className="text-xs text-slate-600">A product of SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic · Patent pending — 100+ patent claims filed</p>
           <div className="flex items-center gap-5 text-xs text-slate-600">
             <a href="mailto:info@aiblab.info" className="hover:text-brand-cyan transition-colors">info@aiblab.info</a>
             <a href="https://aibeva.com" className="hover:text-brand-cyan transition-colors">Meet AIBEVA →</a>

@@ -6,5 +6,5 @@
 - Designed for: FERPA, COPPA, KCSiE, EU AI Act, GDPR
 - No student accounts by design; QR code access for classes
 - Built by SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU
-- Available now from the same company: AIBEVA, the personal AI for Windows that remembers you — https://aibeva.com
+- Available now from the same company: AIBEVA — an intelligent being for Windows. Powered by AIB.core. — https://aibeva.com
 - Contact: info@aiblab.info

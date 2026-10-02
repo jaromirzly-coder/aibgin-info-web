@@ -8,14 +8,6 @@ const testimonials = [
     color: "from-brand-indigo to-brand-violet",
   },
   {
-    quote: "AIBguard gives our safeguarding lead complete peace of mind. Every conversation is logged, and the crisis detection has already flagged one situation we would have missed.",
-    name: "James M.",
-    role: "Deputy Headteacher",
-    org: "Secondary School, UK",
-    avatar: "JM",
-    color: "from-brand-cyan to-brand-indigo",
-  },
-  {
     quote: "We rolled this out across 6 schools in our MAT. The District plan's white-labelling means students see our trust branding, not a third-party tool.",
     name: "Elena K.",
     role: "CEO",

@@ -60,7 +60,7 @@ const features = [
       </svg>
     ),
     title: "5-Year Audit Log",
-    body: "Every interaction logged with AIBguard verdict and reason code. Stored EU-only. Available for Ofsted inspection.",
+    body: "Stored EU-only. Available for Ofsted inspection.",
     tag: "Compliance",
     accent: "brand-emerald",
   },

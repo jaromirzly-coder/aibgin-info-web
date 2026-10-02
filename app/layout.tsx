@@ -9,10 +9,9 @@ export const metadata: Metadata = {
     template: "%s | AIBgin",
   },
   description:
-    "In development: AIBgin, a safe AI platform for K-12 schools, built on AIB.core, the engine behind AIBEVA. Designed for FERPA, COPPA and KCSiE. No student accounts by design.",
+    "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
   keywords: [
-    "AI for schools", "safe AI chatbot K-12", "classroom AI assistant",
-    "school district AI", "COPPA AI for schools", "FERPA AI for schools",
+    "AI for schools", "safe AI chatbot K-12", "school district AI", "COPPA AI for schools", "FERPA AI for schools",
     "KCSiE safeguarding AI", "MAT AI platform", "EdTech AI safety",
     "child safe AI chatbot", "QR code AI school", "school AI chatbot UK",
     "school AI chatbot US", "AIBgin", "AI safeguarding tool",
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIBgin — Safe AI for Schools | US & UK",
     description:
-      "In development: safe AI for the classroom, built on AIB.core, the engine behind AIBEVA. Designed for FERPA, COPPA and KCSiE.",
+      "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
     url: "https://aibgin.info",
     siteName: "AIBgin",
     type: "website",
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AIBgin — Safe AI for Schools | US & UK",
     description:
-      "In development: safe AI for the classroom, built on AIB.core, the engine behind AIBEVA.",
+      "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
     images: ["https://aibgin.info/og-image.png"],
   },
   robots: {
@@ -64,6 +63,7 @@ const jsonLdSchemas = [
     "@type": "Organization",
     "name": "SAY TO PAY s.r.o.",
     "alternateName": "AIBlab",
+    "description": "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
     "url": "https://aiblab.info",
     "address": {
       "@type": "PostalAddress",
@@ -82,7 +82,7 @@ const jsonLdSchemas = [
     "name": "AIBgin",
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
-    "description": "In development: a safe AI platform for K-12 schools, built on AIB.core, the engine behind AIBEVA. Designed for FERPA, COPPA and KCSiE, with no student accounts.",
+    "description": "AIBgin — a being for schools that knows what a student already knows and builds on it. Being built on AIB.core.",
     "url": "https://aibgin.info"
   }
 ];
