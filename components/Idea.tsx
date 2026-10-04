@@ -1,3 +1,5 @@
+import { IMAGES } from "./images";
+
 const points = [
   { title: "Builds on what a student knows.",
     text: "Each student gets an AIB that remembers what they have already learned, where they got stuck and what clicked. The next explanation starts there — not from zero." },
@@ -22,6 +24,14 @@ export default function Idea() {
         <p className="text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl mb-12">
           AIBgin brings the idea behind AIBEVA into the classroom: one intelligent being per student, with a lasting memory of what they know.
         </p>
+        <img
+          src={IMAGES.ginIdea.src}
+          alt="Forgotten notes turning to dust on one side, a growing gold network of knowledge on the other"
+          width={IMAGES.ginIdea.width}
+          height={IMAGES.ginIdea.height}
+          loading="lazy"
+          className="w-full h-auto max-h-[460px] object-cover rounded-2xl border border-white/[0.08] mb-10 sm:mb-12"
+        />
         <ol className="grid md:grid-cols-2 gap-4 sm:gap-5">
           {points.map((p, i) => (
             <li key={p.title}

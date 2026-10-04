@@ -4,11 +4,11 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-navy-950">
       <img
-        src={IMAGES.newBrain.src}
-        alt="AIB.core: the gold core of an AIB"
-        width={IMAGES.newBrain.width}
-        height={IMAGES.newBrain.height}
-        className="absolute inset-0 w-full h-full object-cover object-[70%_center] opacity-35 lg:opacity-60"
+        src={IMAGES.ginHero.src}
+        alt="An empty classroom at dusk with a golden AIB core linked to every desk"
+        width={IMAGES.ginHero.width}
+        height={IMAGES.ginHero.height}
+        className="absolute inset-0 w-full h-full object-cover object-[60%_center] opacity-35 lg:opacity-60"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/30 pointer-events-none" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950 to-transparent pointer-events-none" />
