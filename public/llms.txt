@@ -1,10 +1,10 @@
-# AIBgin — safe AI for schools (in development)
-> AIBgin is in development. It is being built on AIB.core, the engine behind AIBEVA, and is made for the classroom. It is not available for purchase yet.
+# AIBgin — an AIB for schools (in development)
+> A teacher's AIB that knows what every student already knows. AIBgin is in development and being built on AIB.core, the engine behind AIBEVA.
 
 ## Key facts
-- Status: in development, not yet available
-- Designed for: FERPA, COPPA, KCSiE, EU AI Act, GDPR
-- No student accounts by design; QR code access for classes
-- Built by SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU
-- Available now from the same company: AIBEVA — an intelligent being for Windows. Powered by AIB.core. — https://aibeva.com
-- Contact: info@aiblab.info
+- Status: in development. Not yet available.
+- Idea: an intelligent being per student that builds on what the student already knows.
+- Safe by design, with the Guardian layer (AIBguardian) inside; roles for school and family; EU AI Act and GDPR by design.
+- Interested for your school? info@aiblab.info
+- AIBEVA (for adults, 18+) is free for Windows today: https://aibeva.com/download
+- Operator: SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU · Company ID 086 94 222
