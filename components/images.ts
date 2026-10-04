@@ -8,7 +8,7 @@ export const IMAGES = {
   // AIBgin-only images (4 Oct 2026)
   ginHero:    { src: "/images/aibgin-hero.webp",         width: 1024, height: 572 },
   ginIdea:    { src: "/images/aibgin-idea.webp",         width: 1024, height: 687 },
-  ginLayers:  { src: "/images/aibgin-layers.webp",       width: 687,  height: 1024 },
+  ginLayers:  { src: "/images/aibgin-layers.webp",       width: 687,  height: 687 },
   ginSchool:  { src: "/images/aibgin-school.webp",       width: 1024, height: 687 },
   ginAibeva:  { src: "/images/aibgin-aibeva.webp",       width: 1024, height: 434 },
 };
