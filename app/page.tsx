@@ -6,6 +6,7 @@ import Safe from "@/components/Safe";
 import Schools from "@/components/Schools";
 import GetAibeva from "@/components/GetAibeva";
 import Numbers from "@/components/Numbers";
+import HopeaBand from "@/components/HopeaBand";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         adultsNote
       />
       <Numbers />
+      <HopeaBand />
       <Footer />
     </main>
   );
