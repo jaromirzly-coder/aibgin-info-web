@@ -1,10 +1,10 @@
 # AIBgin — an AIB for schools (in development)
-> A teacher's AIB that knows what every student already knows. AIBgin is in development and being built on AIB.core, the engine behind AIBEVA.
+> An AIB for schools that builds on what each student already knows. AIBgin is in development, built on AIB.core, the core behind AIBEVA.
 
 ## Key facts
-- Status: in development. Not yet available.
-- Idea: an intelligent being per student that builds on what the student already knows.
-- Safe by design, with the Guardian layer (AIBguardian) inside; roles for school and family; EU AI Act and GDPR by design.
+- Status: in development. Not yet available. Everything below is our goal, not a finished feature.
+- Idea: an intelligent being for each student that builds on what the student already knows.
+- Safety is part of the core: the Guardian layer (AIBguardian) inside; roles for school and family; designed in the EU around the EU AI Act and GDPR.
 - Interested for your school? info@aiblab.info
-- AIBEVA (for adults, 18+) is free for Windows today: https://aibeva.com/download
-- Operator: SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU · Company ID 086 94 222
+- AIBEVA (for adults, 18+) is available for Windows today, with no subscription: https://aibeva.com/download
+- Operator: SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU · Company ID 086 94 222 · on the market since 2019

@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+// aibeva.com palette (v3.2, 22 Oct 2026). Site accent for aibgin.info: amber.
 const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,21 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: {
-          950: "#040916",
-          900: "#0a1022",
-          800: "#0c1733",
-          700: "#14224a",
-        },
-        gold: {
-          DEFAULT: "#d4a94f",
-          light: "#f3d27a",
-          dark: "#b8892f",
-        },
+        bg: "#070c1a",
+        surface: "#0f1830",
+        tint: "#111d3a",
+        rule: "#1f2c4d",
+        ink: "#f3f6fc",
+        soft: "#a9b5cc",
+        faint: "#75829e",
+        primary: { DEFAULT: "#4d8bff", hover: "#2f6bff", light: "#8fb6ff" },
+        accent: { DEFAULT: "#ffc04d", ink: "#1a1200" },
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        sans: ['"Segoe UI Variable Text"', '"Segoe UI Variable Display"', '"Segoe UI"', "system-ui", "-apple-system", '"Helvetica Neue"', "Arial", "sans-serif"],
+        display: ['"Segoe UI Variable Display"', '"Segoe UI"', "system-ui", "-apple-system", '"Helvetica Neue"', "Arial", "sans-serif"],
       },
+      borderRadius: { card: "20px" },
     },
   },
   plugins: [],
