@@ -2,7 +2,7 @@
 export const SITE = {
   name: "AIBgin",
   domain: "aibgin.info",
-  url: "https://www.aibgin.info",
+  url: "https://aibgin.info",
   short: "aibgin",
   gaId: "G-FH5978GQ0R",
   tagline: "An AIB for schools. In development, built on AIB.core.",
