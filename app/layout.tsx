@@ -10,7 +10,7 @@ export const viewport: Viewport = { themeColor: "#070c1a", colorScheme: "dark" }
 
 export const metadata: Metadata = {
   // Explicit production domain: og:image and twitter:image must not point to a vercel.app preview URL.
-  metadataBase: new URL("https://www.aibgin.info"),
+  metadataBase: new URL("https://aibgin.info"),
   title: { default: SITE.title, template: `%s | ${SITE.name}` },
   description: SITE.description,
   keywords: SITE.keywords,
@@ -73,8 +73,8 @@ const jsonLd = {
     addressCountry: "CZ",
   },
   sameAs: [
-    "https://aibeva.com", "https://aiblab.info", "https://aibsn.org", "https://www.aibguardian.info",
-    "https://www.aibgin.info", "https://www.aibfamily.cloud", "https://iamyouraib.online",
+    "https://aibeva.com", "https://aiblab.info", "https://aibsn.org", "https://aibguardian.info",
+    "https://aibgin.info", "https://aibfamily.cloud", "https://iamyouraib.online",
   ],
   brand: { "@type": "Brand", name: SITE.name, url: SITE.url },
 };
