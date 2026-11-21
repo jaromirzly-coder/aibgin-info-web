@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import Consent from "@/components/Consent";
 import { SITE } from "@/lib/site";
 import "./globals.css";
+import BlackFridayBand from "@/components/BlackFridayBand";
 
 // System fonts only (Segoe UI Variable first, as on aibeva.com): no font files are loaded.
 
@@ -87,6 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body className="font-sans bg-bg text-ink">
+        <BlackFridayBand />
         {children}
         <Consent />
         <Analytics />
